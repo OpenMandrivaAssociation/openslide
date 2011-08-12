@@ -2,7 +2,7 @@ Name:		openslide
 Version:	3.2.4
 Release:	%mkrel 1
 Summary:	C library for reading virtual slides
-Group:		System Environment/Libraries
+Group:		System/Libraries
 License:	LGPLv2
 URL:		http://openslide.org/
 Source0:	openslide-3.2.4.tar.gz
