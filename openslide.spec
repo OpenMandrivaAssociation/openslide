@@ -18,7 +18,7 @@ regardless of the underlying image format.
 
 %package	devel
 Summary:	Development files for %{name}
-Group:		Development/Libraries
+Group:		Development/C
 Requires:	%{name} = %{version}-%{release}
 Requires:	glib2-devel libtiff-devel openjpeg-devel libjpeg-devel pkgconfig
 
@@ -29,7 +29,7 @@ developing applications that use %{name}.
 
 %package   	tools
 Summary:	Command line tools for %{name}
-Group:		Applications/Multimedia
+Group:		File tools
 
 %description	tools
 The %{name}-tools package contains command line tools for working
