@@ -71,3 +71,16 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_includedir}/%{name}/
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
+
+
+
+%changelog
+* Sat Feb 11 2012 Oden Eriksson <oeriksson@mandriva.com> 3.2.4-2mdv2012.0
++ Revision: 773020
+- relink against libpcre.so.1
+
+* Fri Aug 12 2011 Leonardo Coelho <leonardoc@mandriva.org> 3.2.4-1
++ Revision: 694233
+- first version, spec file import from fedora
+- Created package structure for openslide.
+
