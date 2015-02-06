@@ -5,7 +5,7 @@
 Summary:	C library and command line tools for reading virtual slides
 Name:		openslide
 Version:	3.4.0
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		Graphics
 Url:		http://openslide.org/
