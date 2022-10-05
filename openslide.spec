@@ -4,17 +4,18 @@
 
 Summary:	C library and command line tools for reading virtual slides
 Name:		openslide
-Version:	3.4.0
-Release:	2
+Version:	3.4.1
+Release:	1
 License:	LGPLv2+
 Group:		Graphics
 Url:		http://openslide.org/
-Source0:	https://github.com/downloads/openslide/%{name}/%{name}-%{version}.tar.xz
+Source0:	https://github.com/openslide/openslide/releases/download/v%{version}/openslide-%{version}.tar.xz
+Patch0:		we-are-not-windows.patch
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(libopenjpeg1)
+BuildRequires:	pkgconfig(libopenjp2)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	pkgconfig(libxml-2.0)
@@ -63,14 +64,12 @@ applications that use %{name}.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
+autoreconf -fi
+%configure --disable-static
 
 %build
-autoreconf -fi
-%configure2_5x --disable-static
-%make
-
+%make_build
 
 %install
-%makeinstall_std
-
+%make_install
