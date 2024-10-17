@@ -8,7 +8,7 @@ Version:	3.4.1
 Release:	1
 License:	LGPLv2+
 Group:		Graphics
-Url:		http://openslide.org/
+Url:		https://openslide.org/
 Source0:	https://github.com/openslide/openslide/releases/download/v%{version}/openslide-%{version}.tar.xz
 Patch0:		we-are-not-windows.patch
 BuildRequires:	jpeg-devel
