@@ -11,6 +11,11 @@ Group:		Graphics
 Url:		https://openslide.org/
 Source0:	https://github.com/openslide/openslide/releases/download/v%{version}/openslide-%{version}.tar.xz
 Patch0:		we-are-not-windows.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
